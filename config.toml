@@ -1,0 +1,16 @@
+baseURL = "https://www.rninsurance.com/"
+disableKinds = ["taxonomy", "taxonomyTerm"]
+enableRobotsTXT = "true"
+languageCode = "en-us"
+[[menu.main]]
+name = "Furniture"
+url = "/"
+weight = 2
+[[menu.main]]
+name = "Contact"
+url = "/"
+weight = 5
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1

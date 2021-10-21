@@ -17,7 +17,7 @@ body .uk-heading-large,
 body .uk-heading-medium, 
 body .uk-heading-small, 
 body .uk-heading-xlarge {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Playfair Display', serif;
     line-height: 1.5;
 }
 
@@ -57,7 +57,7 @@ ul.uk-breadcrumb>*>:hover {
 }
 
 a.uk-accordion-title {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Playfair Display', serif;
     font-weight: 600;
     font-size: 1rem;
 }
@@ -197,7 +197,7 @@ div.uk-navbar-dropdown ul li {
 } */
 
 ul.uk-navbar-nav>li>a:not(.top-navbar a) {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Playfair Display', serif;
     font-weight: 500;
     transition: .1s;
     color: #fff;

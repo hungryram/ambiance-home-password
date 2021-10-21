@@ -1,5 +1,4 @@
 baseURL = "https://ambiancehome.netlify.app/"
-disableKinds = ["taxonomy", "taxonomyTerm"]
 enableRobotsTXT = "true"
 languageCode = "en-us"
 [[menu.main]]

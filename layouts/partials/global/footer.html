@@ -1,8 +1,65 @@
 {{ $footerSocial := .Site.Data.profile.social_media }}
-{{ $contact := .Site.Data.profile.contact_information }}
+{{ $footerContact := .Site.Data.profile.contact_information }}
 
-<footer class="footer">
+<footer class="footer" style="background: #353535;">
+    <div class="uk-section">
+        <div class="uk-container uk-container-large uk-light">
+            <div class="uk-text-center uk-margin-medium-bottom">
+                <img src="https://res.cloudinary.com/hungryram19/image/upload/v1634513096/Navid%20Ziaolhagh/Ambiance%20Home/logo_footer.png" alt="{{ .Site.Data.profile.company_name }}">
+                <nav class="uk-navbar-" uk-navbar>
+                    <div class="uk-navbar-center">
+                        <ul class="uk-navbar-nav">
+                            <li class="uk-active"><a href="">Home</a></li>
+                            <li class="uk-active"><a href="">About</a></li>
+                            <li class="uk-active"><a href="">Contact</a></li>
+                            <li class="uk-active"><a href="">Home Staging</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <hr>
+            </div>
+            <div class="uk-grid uk-child-width-1-4@s">
+                <div class="uk-card">
+                    <h2 class="uk-h4 uk-text-bold">Ambiance Home</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, mollitia. Explicabo debitis harum, iure ea est ratione totam doloribus facere laborum, fuga soluta et architecto</p>
+                </div>
+                <div class="uk-card">
+                    <h2 class="uk-h4 uk-text-bold">Our Furnitures</h2>
+                    <ul class="uk-list">
+                        <li><a href="">Theodore Alexander Furniture</a></li>
+                        <li><a href="">Woodbridge Furniture</a></li>
+                        <li><a href="">Maitland Furniture</a></li>
+                    </ul>
+                </div>
+                <div class="uk-card">
+                    <h2 class="uk-h4 uk-text-bold">Connect</h2>
+                    <ul class="uk-list">
+                        <li><a href="">Facebook</a></li>
+                        <li><a href="">Pinterest</a></li>
+                        <li><a href="">Instagram</a></li>
+                        <li><a href="">Twitter</a></li>
+                    </ul>
+                </div>
+                <div class="uk-card">
+                    <h2 class="uk-h4 uk-text-bold">Contact Information</h2>
+                    <ul class="uk-list">
+                        {{ if $footerContact.phone }}<li><a href="tel:{{ $footerContact.phone }}">{{ $footerContact.phone }}</a></li>{{ end }}
+                        {{ if $footerContact.cell }}<li><a href="tel:{{ $footerContact.cell }}">{{ $footerContact.cell }}</a></li>{{ end }}
+                        {{ if $footerContact.email }}<li><a href="mailto:{{ $footerContact.email }}">{{ $footerContact.email }}</a></li>{{ end }}
+                        {{ if $footerContact.address }}<li><a href="{{ if $footerContact.google_page_link }}{{ $footerContact.google_page_link }}{{ else }}https://www.google.com/maps/place/{{ $footerContact.address }},+{{ $footerContact.city }},+{{ $footerContact.state }}{{ end }}">{{ $footerContact.address }}, {{ $footerContact.city }}, {{ $footerContact.state }} {{ $footerContact.zip_code }}</a></li>{{ end }}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="uk-padding-small" style="background:#2E2E2E;">
+        <div class="uk-container uk-container-large uk-light">
+            <div class="uk-text-center">
+                <small>&copy; Copyright {{ dateFormat "2006" now }}, {{ .Site.Data.profile.company_name }}</a></small>
 
+            </div>
+        </div>
+    </div>
 </footer>
 
 </body>

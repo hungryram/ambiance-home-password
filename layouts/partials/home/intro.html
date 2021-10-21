@@ -1,17 +1,27 @@
 {{ $optBlock := dict "display" "block" }}
 
 <div class="uk-section">
-    <div class="uk-container">
+    <div class="uk-container uk-container-large">
         <div class="uk-grid-large" uk-grid>
-            <div class="uk-width-expand">
-                <img src="https://res.cloudinary.com/hungryram19/image/upload/v1631588576/randy-nong/rn-insurance/randy-nong-in-office.jpg" alt="Randy Nong sitting in RN Insurance office">
-            </div>
             <div class="uk-width-3-5@s">
+                <h2 class="uk-text-bold">Image galleries and interactivity</h2>
+                <div class="uk-grid uk-child-width-1-3">
+                    <div class="uk-card">
+                        <h3 class="uk-h4 uk-heading-bullet">Home Staging</h3>
+                    </div>
+                    <div class="uk-card">
+                        <h3 class="uk-h4 uk-heading-bullet">Home Staging</h3>
+                    </div>
+                    <div class="uk-card">
+                        <h3 class="uk-h4 uk-heading-bullet">Home Staging</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-expand@s">
                 <div class="uk-card">
-                    <h3 class="uk-margin-remove uk-h4" style="border-left: 4px solid #aa0817;padding-left: 10px;">{{ .Site.Data.home.introduction.subtitle }}</h3>
-                    <h2 class="uk-margin-small-top">{{ .Site.Data.home.introduction.heading }}</h2>
-                    {{ .Site.Data.home.introduction.body | $.Page.RenderString $optBlock }}
-                    <a href="/about" class="uk-button uk-button-primary slide_right">Learn more</a>
+                    <h2 class="uk-text-bold">Welcome to Ambiance Home</h2>
+                    <p>Ambiance Home began with a dream and a vision to be the best place to buy quality furniture. We are proud to be one of the largest distributors of fine furniture and home decor. We have achieved our success by applying the values of trust, commitment and dependability to every aspect of our business.
+                    </p>
                 </div>
             </div>
         </div>

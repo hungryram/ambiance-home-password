@@ -33,6 +33,10 @@ sections:
 - type: heading
   label: Default Pages
 - type: document
+  path: content/team/_index.md
+  label: Team
+  match: "**/*"
+- type: document
   path: content/about/_index.md
   label: About
 - type: document

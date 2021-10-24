@@ -61,7 +61,7 @@ sections:
 - type: document
   path: config.toml
   label: Configuration
-upload_dir: Navid Ziaolhagh/ Ambiance Home
+upload_dir: Navid Ziaolhagh/Ambiance Home
 public_path: https://res.cloudinary.com/hungryram19/image/upload
 front_matter_path: ''
 use_front_matter_path: 

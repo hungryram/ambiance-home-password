@@ -1,4 +1,46 @@
 ---
 label: Team
 hide_body: true
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: body
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Body
+- name: team
+  type: field_group_list
+  fields:
+  - name: name
+    type: text
+    config:
+      required: false
+    label: Name
+  - name: position
+    type: text
+    config:
+      required: false
+    label: Position
+  - name: photo
+    type: file
+    config:
+      maxSize: 2
+    label: Photo
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Team
+- name: search_engine_optimization
+  type: include
+  config: {}
+  template: seo
+  label: Search Engine Optimization

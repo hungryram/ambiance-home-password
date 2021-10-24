@@ -1,0 +1,16 @@
+{{ define "main" }}
+<div class="uk-section">
+    <div class="uk-container">
+        <div class="uk-grid uk-child-width-1-3@s">
+            {{ range .Params.team }}
+            <div class="uk-inline">
+                <img src="{{ .photo }}" alt="{{ .name }}">
+                <div class="uk-overlay uk-overlay-primary uk-position-bottom">
+                    <p>Default Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</div>
+{{ end }}

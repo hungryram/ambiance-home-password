@@ -227,6 +227,27 @@ div.uk-modal-dialog {
     background: #19202A;
 }
 
+/* COVER */
+div.uk-overlay-featured {
+    background: rgb(34 34 34 / 15%);
+}
+
+div.home-feed .uk-card {
+    border: .5px solid rgb(235, 235, 235);
+}
+
+div.uk-overlay-baseof {
+    background: rgb(34 34 34 / 25%);
+}
+
+/* FEATURED */
+
+@media screen and (max-width: 640px) {
+    div.featured div.uk-card:nth-child(2) {
+        flex-direction: column-reverse;
+    }
+}
+
 /* HERO */
 
 div.uk-hero-overlay {

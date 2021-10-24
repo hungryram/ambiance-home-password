@@ -1,14 +1,18 @@
 {{ partial "global/head" . }}
-{{ partial "global/navbar" . }}
-<div class="uk-section uk-section-small page__banner uk-card" style="background: #dbdbdb">
-    <div class="page__slider" uk-scrollspy="cls:uk-animation-fade"></div>
-    <div class="uk-container">
-        <div class="page__banner__inner">
-            <h1 class="h1-title">{{ .Title }}</h1>
-            {{ partial "templates/breadcrumbs" . }}
+<div class="uk-position-relative">
+    <div class="uk-cover-container">
+        <img src="https://res.cloudinary.com/hungryram19/image/upload/v1635100706/Navid%20Ziaolhagh/Ambiance%20Home/kitchen-luxury.jpg" alt="" uk-cover>
+        <canvas height="400"></canvas>
+        <div class="uk-overlay-baseof uk-position-cover"></div>
+        <div class="uk-overlay uk-position-center uk-light">
+            <h1>{{ .Title }}</h1>
         </div>
     </div>
+    <div class="uk-position-top">
+        {{ partial "global/navbar" . }}
+    </div>
 </div>
+
 <main>
 {{ block "main" . }}
 

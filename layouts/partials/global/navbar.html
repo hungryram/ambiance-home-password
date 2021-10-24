@@ -3,7 +3,7 @@
 {{ $navContact := .Site.Data.profile.contact_information }}
 {{ $headerSocial := .Site.Data.profile.social_media }}
 
-<div class="uk-visible@s" uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky uk-dark; top: 200">
+<div class="uk-visible@m" uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky uk-dark; top: 200">
     <nav class="main-nav uk-navbar-container uk-navbar-transparent">
         <div class="uk-container uk-container-expand">
             <div uk-navbar>
@@ -43,7 +43,7 @@
 
 <!-- mobile -->
 <div uk-sticky="animation: uk-animation-slide-top-medium; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-dark; cls-inactive: top: 400">
-    <nav class="uk-navbar uk-navbar-container uk-hidden@s uk-box-shadow-small" style="padding: 0 15px;">
+    <nav class="uk-navbar uk-navbar-container uk-hidden@m uk-box-shadow-small" style="padding: 0 15px;">
         <div class="uk-navbar-left">
             <a href="{{ .Site.BaseURL }}">
                 <img src="{{ .Site.Data.appearance.branding.logo }}" alt="{{ .Site.Data.profile.company_name }}" width="140">

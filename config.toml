@@ -2,6 +2,41 @@ baseURL = "https://ambiancehome.netlify.app/"
 enableRobotsTXT = "true"
 languageCode = "en-us"
 [[menu.main]]
+name = "Shop"
+weight = 6
+[[menu.main]]
+name = "Showroom"
+weight = 5
+[[menu.main]]
+name = "Featured Projects"
+parent = "Luxury Staging"
+weight = 1
+[[menu.main]]
+name = "Luxury Staging"
+weight = 4
+[[menu.main]]
+name = "Featured Projects"
+parent = "Interior Design"
+weight = 1
+[[menu.main]]
+name = "Interior Design"
+weight = 3
+[[menu.main]]
+name = "Contact"
+parent = "About"
+weight = 3
+[[menu.main]]
+name = "Team"
+parent = "About"
+weight = 2
+[[menu.main]]
+name = "About Us"
+parent = "About"
+weight = 1
+[[menu.main]]
+name = "About"
+weight = 2
+[[menu.main]]
 name = "Home"
 url = "/"
 weight = 1

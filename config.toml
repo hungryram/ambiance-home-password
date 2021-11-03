@@ -29,6 +29,7 @@ weight = 3
 name = "Team"
 parent = "About"
 weight = 2
+url = "/team"
 [[menu.main]]
 name = "About Us"
 parent = "About"

@@ -1,0 +1,147 @@
+{{ define "main" }}
+    <div class="uk-section" style="background: #F6F6F6">
+        <div class="uk-container">
+            <div class="uk-grid uk-grid-large">
+                <div class="uk-width-1-2@s">
+                    <img src="{{ .Params.image }}" alt="">
+                </div>
+                <div class="uk-width-1-2@s">
+                    <h2>{{ .Title }}</h2>
+                    <p class="uk-text-uppercase uk-text-bold">Woodrow Brand</p>
+                    <p>{{ .Params.price }}</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium omnis doloremque iste natus aliquid sit necessitatibus, doloribus velit neque ipsam odit ad qui porro dolorum mollitia vitae autem laborum perspiciatis esse ullam cupiditate soluta quis, illo obcaecati? Nemo ab hic accusantium, accusamus perferendis modi aliquid neque amet, quaerat ipsa aperiam!</p>
+                    <div class="uk-margin-medium-top">
+                        <a href="" class="uk-button uk-button-primary" uk-toggle="target: #offcanvas-flip">I'm interested</a>
+                    </div>
+                    <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
+                        <div class="uk-offcanvas-bar">
+                    
+                            <button class="uk-offcanvas-close" type="button" uk-close></button>
+                    
+                            <h3 style="color: #000">Contact</h3>
+                            <p style="color: #000">If you would like more information on the product, please fill out your information or give our representatives a call.</p>
+                    
+                            <form name="Contact Form" method="POST" netlify-honeypot="bot-field" data-netlify="true" class="uk-grid-small uk-dark" uk-grid action="/thank-you">
+                                <input name="bot-field" type="hidden" />
+                                <input type="hidden" name="Subject" value="Website Contact Form">
+                                <input name="Source" type="hidden" value="{{ .Permalink }}" />
+                            
+                                <div class="uk-width-1-2@s">
+                                    <input class="uk-input" type="text" placeholder="Name" name="Name">
+                                </div>
+                                <div class="uk-width-1-2@s">
+                                    <input class="uk-input" type="text" placeholder="Phone" name="Phone">
+                                </div>
+                                <div class="uk-width-1-1">
+                                    <input class="uk-input" type="text" placeholder="Email" name="Email">
+                                </div>
+                                <div class="uk-width-1-1">
+                                    <textarea class="uk-textarea" rows="5" placeholder="Your Message" name="Message"></textarea>
+                                </div>
+                                <div class="uk-width-1-1">
+                                    <button class="uk-button uk-button-primary uk-width-1-1">Submit</button>
+                                </div>
+                                <div class="uk-width-1-1">
+                                    <p>By submitting the form with your information above you are agreeing to our <a style="color:#000" href="/legal/terms-and-conditions">Terms and Conditions</a> and <a style="color:#000" href="/legal/privacy-policy">Privacy Policy</a></p>
+                                </div>
+                            </form>
+                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="uk-section uk-section-small">
+        <div class="uk-container uk-text-center">
+            <div class="uk-grid uk-child-width-1-4">
+                <div>
+                    <h4 class="uk-text-bold">30x20</h4>
+                    <p class="uk-text-uppercase">Dimensions</p class="uk-text-uppercase">
+                </div>
+                <div>
+                    <h4 class="uk-text-bold">5 Years</h4>
+                    <p class="uk-text-uppercase">Warranty</p class="uk-text-uppercase">
+                </div>
+                <div>
+                    <h4 class="uk-text-bold">CRO4359</h4>
+                    <p class="uk-text-uppercase">SKU</p class="uk-text-uppercase">
+                </div>
+                <div>
+                    <h4 class="uk-text-bold">Woodrow</h4>
+                    <p class="uk-text-uppercase">Brand</p class="uk-text-uppercase">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="center: true">
+
+        <ul class="uk-slider-items uk-grid">
+            <li class="uk-width-1-2">
+                <div class="uk-panel uk-cover-container" uk-height-viewport="offset-bottom:40">
+                    <img src="https://ferreti.eu/app/uploads/2020/09/felicity_gall1-886x0-c-default.jpg" alt="" uk-cover>
+                </div>
+            </li>
+            <li class="uk-width-3-4">
+                <div class="uk-panel uk-cover-container" uk-height-viewport="offset-bottom:40">
+                    <img src="https://res.cloudinary.com/hungryram19/image/upload/v1635089032/Navid%20Ziaolhagh/Ambiance%20Home/240573644_141955678093874_1330773000826911428_n.jpg" alt="" uk-cover>
+
+                </div>
+            </li>
+            <li class="uk-width-3-4">
+                <div class="uk-panel uk-cover-container" uk-height-viewport="offset-bottom:40">
+                    <img src="https://res.cloudinary.com/hungryram19/image/upload/v1635089032/Navid%20Ziaolhagh/Ambiance%20Home/240639818_1203323013525475_714194009111930383_n.jpg" alt="" uk-cover>
+
+                </div>
+            </li>
+            <li class="uk-width-3-4">
+                <div class="uk-panel uk-cover-container" uk-height-viewport="offset-bottom:40">
+                    <img src="https://res.cloudinary.com/hungryram19/image/upload/v1635100706/Navid%20Ziaolhagh/Ambiance%20Home/kitchen-luxury.jpg" alt="" uk-cover>
+
+                </div>
+            </li>
+            <li class="uk-width-3-4">
+                <div class="uk-panel uk-cover-container" uk-height-viewport="offset-bottom:40">
+                    <img src="https://res.cloudinary.com/hungryram19/image/upload/v1635089032/Navid%20Ziaolhagh/Ambiance%20Home/240639818_1203323013525475_714194009111930383_n.jpg" alt="" uk-cover>
+                </div>
+            </li>
+        </ul>
+    
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+    
+    </div>
+
+<div class="uk-section">
+    <div class="uk-container">
+        <h2>The best furniture</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aut fugit amet molestias perferendis veniam, voluptatibus cupiditate quidem, molestiae quisquam necessitatibus! Magni molestias quis repellat nemo quo quasi placeat quod amet, accusamus qui dolorum dolorem, molestiae eum incidunt blanditiis modi reiciendis non, aut sint? Fugiat odio accusamus recusandae repellat, animi, eveniet in dolorem nostrum ipsa eligendi magnam ab sapiente officia? Consequatur minima dolorum explicabo quaerat voluptas quae quis corrupti dolores quos accusantium maxime tenetur dignissimos aliquam non reprehenderit, ea inventore officiis sequi eaque quidem totam, fugiat odio earum repellendus!</p>
+    </div>
+</div>
+
+<div class="uk-section">
+    <div class="uk-container">
+        <h2>Customers also viewed</h2>
+        <div class="uk-child-width-1-3@s uk-grid">
+            {{ range where .Site.RegularPages "Type" "shop" }}
+            <a href="{{ .Permalink }}" class="uk-link-text">
+                <div>
+                    <div class="uk-card uk-card-default uk-text-center">
+                        <div class="uk-card-media-top uk-cover-container">
+                            <img src="{{ .Params.image }}" alt="" uk-cover>
+                            <canvas height="300"></canvas>
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">{{ .Title }}</h3>
+                            <p>{{ .Params.price }}</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            {{ end }}
+        </div>
+    </div>
+</div>
+
+{{ end }}

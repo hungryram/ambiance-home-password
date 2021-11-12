@@ -35,6 +35,11 @@ sections:
 - type: document
   path: content/team/_index.md
   label: Team
+- type: directory
+  path: content/portfolio
+  label: Portfolio
+  create: documents
+  match: "**/*"
 - type: document
   path: content/about/_index.md
   label: About

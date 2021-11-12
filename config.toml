@@ -4,6 +4,7 @@ languageCode = "en-us"
 [[menu.main]]
 name = "Shop"
 weight = 6
+url = "/shop"
 [[menu.main]]
 name = "Showroom"
 weight = 5
@@ -25,6 +26,7 @@ weight = 3
 name = "Contact"
 parent = "About"
 weight = 3
+url = "/contact"
 [[menu.main]]
 name = "Team"
 parent = "About"
@@ -34,6 +36,7 @@ url = "/team"
 name = "About Us"
 parent = "About"
 weight = 1
+url = "/company"
 [[menu.main]]
 name = "About"
 weight = 2
@@ -41,3 +44,7 @@ weight = 2
 name = "Home"
 url = "/"
 weight = 1
+[taxonomies]
+category = "categories"
+tag = "tags"
+portfolio = "portfolios"

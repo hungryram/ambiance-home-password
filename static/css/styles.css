@@ -191,6 +191,10 @@ div.page__banner__inner {
 
 /* NAVBAR */
 
+nav.uk-navbar-container:not(.uk-navbar-transparent) {
+    background: transparent;
+}
+
 div.top-navbar .uk-navbar-nav>li>a {
     min-height: 40px;
     text-transform: unset;
@@ -239,11 +243,6 @@ ul.uk-navbar-nav>li>a:not(.top-navbar a) {
     color: #fff;
 }
 
-div ul.uk-navbar-nav>li>a:hover {
-    border-bottom: 3px solid #000000;
-    transition: .1s;
-    color: #000000;
-}
 
 ul.uk-nav-parent-icon>.uk-parent>a::after {
     transform: rotate(
@@ -260,12 +259,20 @@ ul.uk-nav-parent-icon>.uk-parent>a::after {
 }
 
 div.uk-modal-dialog {
-    background: #19202A;
+    background: #2E2E2E;
 }
 
 /* COVER */
 div.uk-overlay-featured {
     background: rgb(34 34 34 / 15%);
+}
+
+div.uk-overlay-primary {
+    background: rgb(43 43 43 / 53%);
+}
+
+div.uk-overlay-default {
+    background: rgb(255 255 255 / 12%);
 }
 
 div.home-feed .uk-card {

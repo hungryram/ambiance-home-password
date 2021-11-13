@@ -9,10 +9,10 @@
                 <nav class="uk-navbar-" uk-navbar>
                     <div class="uk-navbar-center">
                         <ul class="uk-navbar-nav">
-                            <li class="uk-active"><a href="">Home</a></li>
-                            <li class="uk-active"><a href="">About</a></li>
-                            <li class="uk-active"><a href="">Contact</a></li>
-                            <li class="uk-active"><a href="">Home Staging</a></li>
+                            <li class="uk-active"><a href="/">Home</a></li>
+                            <li class="uk-active"><a href="/company">About</a></li>
+                            <li class="uk-active"><a href="/contact">Contact</a></li>
+                            <li class="uk-active"><a href="/shop">Shop</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -34,10 +34,11 @@
                 <div class="uk-card">
                     <h2 class="uk-h4 uk-text-bold">Connect</h2>
                     <ul class="uk-list">
-                        <li><a href="">Facebook</a></li>
-                        <li><a href="">Pinterest</a></li>
-                        <li><a href="">Instagram</a></li>
-                        <li><a href="">Twitter</a></li>
+                        {{ if $footerSocial.facebook }}<li><a href="{{ $footerSocial.facebook }}">Facebook</a></li>{{ end }}
+                        {{ if $footerSocial.pinterest }}<li><a href="{{ $footerSocial.pinterest }}">Pinterest</a></li>{{ end }}
+                        {{ if $footerSocial.instagram }}<li><a href="{{ $footerSocial.instagram }}">Instagram</a></li>{{ end }}
+                        {{ if $footerSocial.houzz }}<li><a href="{{ $footerSocial.houzz }}">Houzz</a></li>{{ end }}
+                        {{ if $footerSocial.twitter }}<li><a href="{{ $footerSocial.twitter }}">Twitter</a></li>{{ end }}
                     </ul>
                 </div>
                 <div class="uk-card">

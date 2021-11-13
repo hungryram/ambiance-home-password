@@ -19,6 +19,7 @@ weight = 4
 name = "Featured Projects"
 parent = "Interior Design"
 weight = 1
+url = "/portfolio/minimalist/"
 [[menu.main]]
 name = "Interior Design"
 weight = 3

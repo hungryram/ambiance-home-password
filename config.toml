@@ -16,10 +16,10 @@ weight = 1
 name = "Luxury Staging"
 weight = 4
 [[menu.main]]
-name = "Featured Projects"
+name = "Portfolio"
 parent = "Interior Design"
 weight = 1
-url = "/portfolio/minimalist/"
+url = "/portfolio/"
 [[menu.main]]
 name = "Interior Design"
 weight = 3

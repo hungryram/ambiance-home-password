@@ -63,11 +63,11 @@
     <div class="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle" uk-height-viewport>
         <button class="uk-modal-close-full" type="button" uk-close></button>
 
-        <ul class="uk-nav-default uk-nav-parent-icon uk-margin-auto-vertical uk-text-center" uk-nav>
+        <ul class="uk-nav-default uk-nav-parent-icon uk-margin-auto-vertical uk-text-center" uk-nav uk-scrollspy="cls: uk-animation-fade; target: .animate; delay: 150; repeat: true">
             {{ $currentPage := . }}
             {{ range .Site.Menus.main }}
             {{ if .HasChildren }}
-            <li class="uk-parent">
+            <li class="uk-parent animate">
                 <a href="#" class="uk-text-light">{{ .Name }}</a>
                 <ul class="uk-nav-sub">
                     {{ range .Children }}
@@ -76,7 +76,7 @@
                 </ul>
             </li>
             {{ else }}
-            <li><a href="{{ .URL | absURL }}" class="uk-text-light">{{ .Name }}</a></li>
+            <li class="animate"><a href="{{ .URL | absURL }}" class="uk-text-light">{{ .Name }}</a></li>
             {{ end }}
             {{ end }}
         </ul>

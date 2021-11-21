@@ -17,15 +17,17 @@ body .uk-heading-large,
 body .uk-heading-medium, 
 body .uk-heading-small, 
 body .uk-heading-xlarge {
-    font-family: 'EB Garamond', serif;
+    font-family: 'Open Sans', sans-serif;
     line-height: 1.5;
+    font-weight: 300;
 }
 
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #777;
     font-size: 16px;
     line-height: 30px;
+    font-weight: 300;
 }
 
 div.uk-card-default {
@@ -62,7 +64,7 @@ ul.uk-breadcrumb>*>:hover {
 }
 
 a.uk-accordion-title {
-    font-family: 'EB Garamond', serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     font-size: 1rem;
 }
@@ -191,6 +193,10 @@ div.page__banner__inner {
 
 /* NAVBAR */
 
+.uk-visible\@l.uk-sticky.undefined.uk-sticky-below.uk-sticky-fixed {
+    background: #2E2E2E;
+}
+
 nav.uk-navbar-container:not(.uk-navbar-transparent) {
     background: transparent;
 }
@@ -237,10 +243,11 @@ div.uk-navbar-dropdown ul li {
 } */
 
 ul.uk-navbar-nav>li>a:not(.top-navbar a) {
-    font-family: 'EB Garamond', serif;
-    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
     transition: .1s;
     color: #fff;
+    font-size: 14px;
 }
 
 
@@ -299,6 +306,20 @@ div.uk-hero-overlay {
 
 div.hero-text h1 {
     font-size: 5rem;
+}
+
+.hero-text .uk-button.uk-button-secondary {
+    background: transparent;
+    border: 1px solid #fff;
+    transition: .3s;
+    color: #fff;
+}
+
+.hero-text .uk-button.uk-button-secondary:hover {
+    background: #000;
+    border: 1px solid #000;
+    color: #fff;
+    transition: .3s;
 }
 
 @media screen and (max-width: 800px) {

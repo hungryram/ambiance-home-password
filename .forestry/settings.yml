@@ -32,6 +32,11 @@ sections:
   - blog
 - type: heading
   label: Default Pages
+- type: directory
+  path: content/shop
+  label: Shop
+  create: documents
+  match: "**/*"
 - type: document
   path: content/team/_index.md
   label: Team
@@ -48,9 +53,6 @@ sections:
 - type: document
   path: content/contact/_index.md
   label: Contact
-- type: document
-  path: content/faq/_index.md
-  label: FAQ
 - type: document
   path: content/testimonials/_index.md
   label: Testimonials

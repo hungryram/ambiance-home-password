@@ -50,3 +50,5 @@ fields:
   config: {}
   template: seo
   label: Search Engine Optimization
+pages:
+- content/shop/accent-chair.md

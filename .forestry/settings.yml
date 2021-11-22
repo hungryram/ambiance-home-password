@@ -32,6 +32,10 @@ sections:
   - blog
 - type: heading
   label: Default Pages
+- type: document
+  path: content/interior-design-portfolio/_index.md
+  label: Interior Design Portfolio
+  match: "**/*"
 - type: directory
   path: content/shop
   label: Shop

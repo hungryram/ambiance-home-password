@@ -6,10 +6,10 @@ header:
   enable_white_text: false
   enable_white_text_top: false
 branding:
-  site_title: RN Insurance
-  logo: https://res.cloudinary.com/hungryram19/image/upload/v1634513096/Navid%20Ziaolhagh/Ambiance%20Home/logo_footer.png
-  dark_logo: https://res.cloudinary.com/hungryram19/image/upload/v1634513096/Navid%20Ziaolhagh/Ambiance%20Home/logo_footer.png
-  favicon: https://res.cloudinary.com/hungryram19/image/upload/v1631038615/randy-nong/rn-insurance/Gray-01_zr1qjl.png
+  site_title: Ambiance Home
+  logo: https://res.cloudinary.com/hungryram19/image/upload/v1637562050/navid-ziaolhagh/ambiance-home/logo_footer.png
+  dark_logo: ''
+  favicon: ''
   logo_width: 
 colors:
   button_background_color: ''

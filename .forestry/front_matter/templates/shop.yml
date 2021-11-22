@@ -1,4 +1,52 @@
 ---
 label: Shop
 hide_body: false
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: price
+  type: text
+  config:
+    required: false
+  label: Price
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Description
+- name: gallery
+  type: image_gallery
+  config: {}
+  label: Gallery
+- name: dimension
+  type: text
+  config:
+    required: false
+  label: Dimension
+- name: warranty
+  type: text
+  config:
+    required: false
+  label: Warranty
+- name: sku
+  type: text
+  config:
+    required: false
+  label: SKU
+- name: brand
+  type: text
+  config:
+    required: false
+  label: Brand
+- name: search_engine_optimization
+  type: include
+  config: {}
+  template: seo
+  label: Search Engine Optimization

@@ -1,7 +1,7 @@
 {{ $footerSocial := .Site.Data.profile.social_media }}
 {{ $footerContact := .Site.Data.profile.contact_information }}
 
-<footer class="footer" style="background: #353535;">
+<footer class="footer" style="background: #000;">
     <div class="uk-section">
         <div class="uk-container uk-container-large uk-light">
             <div class="uk-text-center uk-margin-medium-bottom">
@@ -25,11 +25,11 @@
                 </div>
                 <div class="uk-card uk-margin-medium-bottom">
                     <h2 class="uk-h5 uk-text-bold uk-text-uppercase">Policies</h2>
-                    <ul class="uk-list">
-                        <li><a href="">Shipping & Returns</a></li>
-                        <li><a href="">Terms and Conditions</a></li>
-                        <li><a href="">Privacy Policy</a></li>
-                    </ul>
+                    <ul class="hr-legals uk-padding-remove uk-list">
+                        {{ range where $.Site.Pages.ByWeight "Type" "legal" }}
+                        <li class="uk-light"><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+                        {{ end }}
+                      </ul>
                 </div>
                 <div class="uk-card uk-margin-medium-bottom">
                     <h2 class="uk-h5 uk-text-bold uk-text-uppercase">Hours</h2>

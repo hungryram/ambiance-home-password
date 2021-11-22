@@ -1,11 +1,26 @@
 {{ define "main" }}
     <div class="uk-section">
         <div class="uk-container uk-container-large">
-            <div class="uk-grid-small uk-child-width-1-3@s" uk-grid>
+            <div class="uk-grid-small uk-child-width-1-3@s" uk-grid uk-lightbox>
+                <div>
+                    <a href="{{ . }}">
+                        <div class="uk-inline uk-cover-container" style="background: #000;">
+                            <canvas height="450" width="500"></canvas>
+                            <div class="uk-overlay uk-position-center uk-light">
+                                <h3 class="uk-text-uppercase">Client Portfolio</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
                 {{ range .Params.gallery }}
-                    <div>
-                        <img src="{{ . }}" alt="">
-                    </div>
+                <div>
+                    <a href="{{ . }}">
+                        <div class="uk-inline uk-cover-container">
+                            <img src="{{ . }}" alt="" uk-cover>
+                            <canvas height="450" width="500"></canvas>
+                        </div>
+                    </a>
+                </div>
                 {{ end }}
             </div>
         </div>

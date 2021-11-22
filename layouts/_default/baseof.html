@@ -1,7 +1,7 @@
 {{ partial "global/head" . }}
 <div class="uk-position-relative">
     {{ if .Params.sku }}
-    <div class="uk-cover-container" style="background:#2e2e2e;">
+    <div class="uk-cover-container" style="background:#000;">
         
         <canvas height="100"></canvas>
         <div class="uk-overlay-baseof uk-position-cover"></div>
@@ -11,8 +11,11 @@
         <img src="https://res.cloudinary.com/hungryram19/image/upload/v1637596762/navid-ziaolhagh/ambiance-home/modern-gray-interior.jpg" alt="" uk-cover>
         <canvas height="400"></canvas>
         <div class="uk-overlay-baseof uk-position-cover"></div>
-        <div class="uk-overlay uk-position-center uk-light">
+        <div class="uk-overlay uk-position-center uk-light uk-text-center">
             <h1 class="uk-text-uppercase">{{ .Title }}</h1>
+            {{ if .Params.body }}
+            <p>{{ .Params.body }}</p>
+            {{ end }}
         </div>
     </div>
     {{ end }}

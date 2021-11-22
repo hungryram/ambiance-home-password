@@ -1,8 +1,7 @@
 +++
-body = "Swing by the office to let a licensed professional help you find the right coverage. Get all the information you need in person. Not nearby? Use the form below to send a secure message or give us a call."
 heading = "Visit the Office"
-meta_description = "Work with Randy Nong at RN Insurance. Please don’t hesitate to call or come in and see me with any insurance related problems."
+meta_description = "Contact our team at Ambiance Home for any questions, or visit our 50,000 sqft. showroom"
 title = "Contact"
-title_tag = "Contact RN Insurance"
+title_tag = "Contact Ambiance Home"
 
 +++

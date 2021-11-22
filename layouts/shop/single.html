@@ -1,15 +1,32 @@
 {{ define "main" }}
-    <div class="uk-section" style="background: #F6F6F6">
+    <div class="uk-section">
         <div class="uk-container">
-            <div class="uk-grid uk-grid-large">
+            <div class="uk-grid uk-grid-large" uk-grid>
                 <div class="uk-width-1-2@s">
-                    <img src="{{ .Params.image }}" alt="">
+                    <div class="uk-position-relative uk-dark" tabindex="-1" uk-slider>
+
+                        <ul class="uk-slider-items uk-child-width-1-1" uk-lightbox>
+                            {{ range .Params.gallery }}
+                            <li>
+                                <a href="{{ . }}">
+                                    <img src="{{ . }}" alt="">
+                                </a>
+                            </li>
+                            {{ end }}
+                        </ul>
+                    
+                        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                    
+                    </div>
                 </div>
                 <div class="uk-width-1-2@s">
-                    <h2>{{ .Title }}</h2>
+                    <h2 class="uk-text-uppercase">{{ .Title }}</h2>
                     <p class="uk-text-uppercase uk-text-bold">Woodrow Brand</p>
                     <p>{{ .Params.price }}</p>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium omnis doloremque iste natus aliquid sit necessitatibus, doloribus velit neque ipsam odit ad qui porro dolorum mollitia vitae autem laborum perspiciatis esse ullam cupiditate soluta quis, illo obcaecati? Nemo ab hic accusantium, accusamus perferendis modi aliquid neque amet, quaerat ipsa aperiam!</p>
+                    {{ if .Params.description }}
+                        {{ .Params.description }}
+                    {{ end }}
                     <div class="uk-margin-medium-top">
                         <a href="" class="uk-button uk-button-primary" uk-toggle="target: #offcanvas-flip">I'm interested</a>
                     </div>
@@ -18,7 +35,7 @@
                     
                             <button class="uk-offcanvas-close" type="button" uk-close></button>
                     
-                            <h3 style="color: #000">Contact</h3>
+                            <h3 style="color: #000" class="uk-text-uppercase">Contact</h3>
                             <p style="color: #000">If you would like more information on the product, please fill out your information or give our representatives a call.</p>
                     
                             <form name="Contact Form" method="POST" netlify-honeypot="bot-field" data-netlify="true" class="uk-grid-small uk-dark" uk-grid action="/thank-you">
@@ -42,7 +59,7 @@
                                     <button class="uk-button uk-button-primary uk-width-1-1">Submit</button>
                                 </div>
                                 <div class="uk-width-1-1">
-                                    <p>By submitting the form with your information above you are agreeing to our <a style="color:#000" href="/legal/terms-and-conditions">Terms and Conditions</a> and <a style="color:#000" href="/legal/privacy-policy">Privacy Policy</a></p>
+                                    <p style="color:#000">By submitting the form with your information above you are agreeing to our <a style="color:#000" href="/legal/terms-and-conditions">Terms and Conditions</a> and <a style="color:#000" href="/legal/privacy-policy">Privacy Policy</a></p>
                                 </div>
                             </form>
                     
@@ -52,30 +69,38 @@
             </div>
         </div>
     </div>
-    <div class="uk-section uk-section-small">
+    <div class="uk-section uk-section-small" style="background: #F6F6F6">
         <div class="uk-container uk-text-center">
-            <div class="uk-grid uk-child-width-1-4">
+            <div class="uk-grid-match uk-child-width-expand@s uk-text-center" uk-grid>
+                {{ if .Params.dimension }}
                 <div>
-                    <h4 class="uk-text-bold">30x20</h4>
-                    <p class="uk-text-uppercase">Dimensions</p class="uk-text-uppercase">
+                    <h4 class="uk-text-bold uk-text-uppercase">Dimensions</h4>
+                    <p class="uk-text-uppercase">{{ .Params.dimension }}</p class="uk-text-uppercase">
                 </div>
+                {{ end }}
+                {{ if .Params.warranty }}
                 <div>
-                    <h4 class="uk-text-bold">5 Years</h4>
-                    <p class="uk-text-uppercase">Warranty</p class="uk-text-uppercase">
+                    <h4 class="uk-text-bold uk-text-uppercase">Warranty</h4>
+                    <p class="uk-text-uppercase">{{ .Params.warranty }}</p class="uk-text-uppercase">
                 </div>
+                {{ end }}
+                {{ if .Params.sku }}
                 <div>
-                    <h4 class="uk-text-bold">CRO4359</h4>
-                    <p class="uk-text-uppercase">SKU</p class="uk-text-uppercase">
+                    <h4 class="uk-text-bold uk-text-uppercase">SKU</h4>
+                    <p class="uk-text-uppercase">{{ .Params.sku }}</p class="uk-text-uppercase">
                 </div>
+                {{ end }}
+                {{ if .Params.brand }}
                 <div>
-                    <h4 class="uk-text-bold">Woodrow</h4>
-                    <p class="uk-text-uppercase">Brand</p class="uk-text-uppercase">
+                    <h4 class="uk-text-bold uk-text-uppercase">Brand</h4>
+                    <p class="uk-text-uppercase">{{ .Params.brand }}</p class="uk-text-uppercase">
                 </div>
+                {{ end }}
             </div>
         </div>
     </div>
 
-    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="center: true">
+    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="center: true" style="background: #F6F6F6">
 
         <ul class="uk-slider-items uk-grid">
             <li class="uk-width-1-2">
@@ -113,33 +138,23 @@
     
     </div>
 
-<div class="uk-section">
+<div class="uk-section" style="background: #F6F6F6">
     <div class="uk-container">
-        <h2>The best furniture</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aut fugit amet molestias perferendis veniam, voluptatibus cupiditate quidem, molestiae quisquam necessitatibus! Magni molestias quis repellat nemo quo quasi placeat quod amet, accusamus qui dolorum dolorem, molestiae eum incidunt blanditiis modi reiciendis non, aut sint? Fugiat odio accusamus recusandae repellat, animi, eveniet in dolorem nostrum ipsa eligendi magnam ab sapiente officia? Consequatur minima dolorum explicabo quaerat voluptas quae quis corrupti dolores quos accusantium maxime tenetur dignissimos aliquam non reprehenderit, ea inventore officiis sequi eaque quidem totam, fugiat odio earum repellendus!</p>
+        {{ .Content }}
     </div>
 </div>
 
 <div class="uk-section">
     <div class="uk-container">
-        <h2>Customers also viewed</h2>
-        <div class="uk-child-width-1-3@s uk-grid">
-            {{ range where .Site.RegularPages "Type" "shop" }}
-            <a href="{{ .Permalink }}" class="uk-link-text">
-                <div>
-                    <div class="uk-card uk-card-default uk-text-center">
-                        <div class="uk-card-media-top uk-cover-container">
-                            <img src="{{ .Params.image }}" alt="" uk-cover>
-                            <canvas height="300"></canvas>
-                        </div>
-                        <div class="uk-card-body">
-                            <h3 class="uk-card-title">{{ .Title }}</h3>
-                            <p>{{ .Params.price }}</p>
-                        </div>
-                    </div>
-                </div>
-            </a>
-            {{ end }}
+        <h2 class="uk-text-uppercase">Customers also viewed</h2>
+        <div class="uk-position-relative uk-dark" tabindex="-1" uk-slider>
+            <ul class="uk-slider-items uk-child-width-1-3@m uk-child-width-1-2@s uk-grid">
+                {{ range shuffle (where .Site.RegularPages "Type" "shop") }}
+                <li>
+                    {{ partial "templates/shop" . }}
+                </li>
+                {{ end }}
+            </ul>
         </div>
     </div>
 </div>

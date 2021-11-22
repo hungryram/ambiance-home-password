@@ -5,7 +5,7 @@
     <div class="uk-section">
         <div class="uk-container uk-container-large uk-light">
             <div class="uk-text-center uk-margin-medium-bottom">
-                <img src="https://res.cloudinary.com/hungryram19/image/upload/v1634513096/Navid%20Ziaolhagh/Ambiance%20Home/logo_footer.png" alt="{{ .Site.Data.profile.company_name }}">
+                <img src="https://res.cloudinary.com/hungryram19/image/upload/v1637562050/navid-ziaolhagh/ambiance-home/logo_footer.png" alt="{{ .Site.Data.profile.company_name }}">
                 <nav class="uk-navbar-" uk-navbar>
                     <div class="uk-navbar-center">
                         <ul class="uk-navbar-nav">
@@ -18,31 +18,29 @@
                 </nav>
                 <hr>
             </div>
-            <div class="uk-grid uk-child-width-1-4@l uk-child-width-1-3@m">
+            <div class="uk-child-width-1-4@l uk-child-width-1-3@m uk-grid-large" uk-grid>
                 <div class="uk-card uk-margin-medium-bottom">
-                    <h2 class="uk-h4 uk-text-bold">Ambiance Home</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, mollitia. Explicabo debitis harum, iure ea est ratione totam doloribus facere laborum, fuga soluta et architecto</p>
+                    <h2 class="uk-h5 uk-text-bold uk-text-uppercase">Ambiance Home</h2>
+                    <p>Ambiance Home is proud to be the largest distributors of fine furniture and home decor. You can find exactly waht you need for your space at an affordable price.</p>
                 </div>
                 <div class="uk-card uk-margin-medium-bottom">
-                    <h2 class="uk-h4 uk-text-bold">Our Furnitures</h2>
+                    <h2 class="uk-h5 uk-text-bold uk-text-uppercase">Policies</h2>
                     <ul class="uk-list">
-                        <li><a href="">Theodore Alexander Furniture</a></li>
-                        <li><a href="">Woodbridge Furniture</a></li>
-                        <li><a href="">Maitland Furniture</a></li>
+                        <li><a href="">Shipping & Returns</a></li>
+                        <li><a href="">Terms and Conditions</a></li>
+                        <li><a href="">Privacy Policy</a></li>
                     </ul>
                 </div>
                 <div class="uk-card uk-margin-medium-bottom">
-                    <h2 class="uk-h4 uk-text-bold">Connect</h2>
+                    <h2 class="uk-h5 uk-text-bold uk-text-uppercase">Hours</h2>
                     <ul class="uk-list">
-                        {{ if $footerSocial.facebook }}<li><a href="{{ $footerSocial.facebook }}">Facebook</a></li>{{ end }}
-                        {{ if $footerSocial.pinterest }}<li><a href="{{ $footerSocial.pinterest }}">Pinterest</a></li>{{ end }}
-                        {{ if $footerSocial.instagram }}<li><a href="{{ $footerSocial.instagram }}">Instagram</a></li>{{ end }}
-                        {{ if $footerSocial.houzz }}<li><a href="{{ $footerSocial.houzz }}">Houzz</a></li>{{ end }}
-                        {{ if $footerSocial.twitter }}<li><a href="{{ $footerSocial.twitter }}">Twitter</a></li>{{ end }}
+                        <li><p>Come visit our showroom during our opening hours</p></li>
+                        <li><strong>Mon - Fri:</strong> 10am - 4pm</li>
+                        <li><strong>Sat - Sun:</strong> Closed</li>
                     </ul>
                 </div>
                 <div class="uk-card uk-margin-medium-bottom">
-                    <h2 class="uk-h4 uk-text-bold">Contact Information</h2>
+                    <h2 class="uk-h5 uk-text-bold uk-text-uppercase">Contact Information</h2>
                     <ul class="uk-list">
                         {{ if $footerContact.phone }}<li><a href="tel:{{ $footerContact.phone }}">{{ $footerContact.phone }}</a></li>{{ end }}
                         {{ if $footerContact.cell }}<li><a href="tel:{{ $footerContact.cell }}">{{ $footerContact.cell }}</a></li>{{ end }}

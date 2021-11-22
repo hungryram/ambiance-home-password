@@ -1,13 +1,21 @@
 {{ partial "global/head" . }}
 <div class="uk-position-relative">
+    {{ if .Params.gallery }}
+    <div class="uk-cover-container" style="background:#2e2e2e;">
+        
+        <canvas height="100"></canvas>
+        <div class="uk-overlay-baseof uk-position-cover"></div>
+    </div>
+    {{ else }}
     <div class="uk-cover-container">
         <img src="https://res.cloudinary.com/hungryram19/image/upload/v1635123155/Navid%20Ziaolhagh/Ambiance%20Home/francesca-tosolini-lIVK3z606og-unsplash.jpg" alt="" uk-cover>
         <canvas height="400"></canvas>
         <div class="uk-overlay-baseof uk-position-cover"></div>
         <div class="uk-overlay uk-position-center uk-light">
-            <h1>{{ .Title }}</h1>
+            <h1 class="uk-text-uppercase">{{ .Title }}</h1>
         </div>
     </div>
+    {{ end }}
     <div class="uk-position-top">
         {{ partial "global/navbar" . }}
     </div>

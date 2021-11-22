@@ -37,6 +37,8 @@ sections:
   label: Shop
   create: documents
   match: "**/*"
+  templates:
+  - shop
 - type: document
   path: content/team/_index.md
   label: Team

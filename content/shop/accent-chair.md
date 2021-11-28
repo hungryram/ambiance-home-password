@@ -6,7 +6,7 @@ gallery = ["https://res.cloudinary.com/hungryram19/image/upload/v1637562053/navi
 meta_description = ""
 price = "$1,195"
 sku = "1121-245-CDG-14438"
-title = "Accent Chair"
+title = "Accent Chair #14438"
 title_tag = ""
 warranty = "3"
 [search_engine_optimization]

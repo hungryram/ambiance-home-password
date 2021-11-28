@@ -5,7 +5,7 @@ dimension = "25\"W x 39\"D x 31.50\"H"
 gallery = ["https://res.cloudinary.com/hungryram19/image/upload/v1637562052/navid-ziaolhagh/ambiance-home/ARMLESS_SWIVEL_14720_1.jpg", "https://res.cloudinary.com/hungryram19/image/upload/v1637562047/navid-ziaolhagh/ambiance-home/ARMLESS_SWIVEL_14720_6.jpg", "https://res.cloudinary.com/hungryram19/image/upload/v1637562067/navid-ziaolhagh/ambiance-home/ARMLESS_SWIVEL_14720_5.jpg", "https://res.cloudinary.com/hungryram19/image/upload/v1637562050/navid-ziaolhagh/ambiance-home/ARMLESS_SWIVEL_14720_3.jpg"]
 price = "$1,195"
 sku = "1121-011-CBD-14720"
-title = "Armless Swivel"
+title = "Armless Swivel #14720"
 warranty = "No Warranty"
 [search_engine_optimization]
 meta_description = ""

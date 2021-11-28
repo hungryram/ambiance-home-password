@@ -5,7 +5,7 @@ dimension = "78.75W\"W x 28\"D x 20\"H"
 gallery = ["https://res.cloudinary.com/hungryram19/image/upload/v1637562060/navid-ziaolhagh/ambiance-home/BENCH_13381_1.jpg", "https://res.cloudinary.com/hungryram19/image/upload/v1637562046/navid-ziaolhagh/ambiance-home/BENCH_13381_4_eaqqb0.jpg", "https://res.cloudinary.com/hungryram19/image/upload/v1637562047/navid-ziaolhagh/ambiance-home/BENCH_13381_3_wseih7.jpg", "https://res.cloudinary.com/hungryram19/image/upload/v1637562046/navid-ziaolhagh/ambiance-home/BENCH_13381_2_faahl3.jpg"]
 price = "$1,195"
 sku = "1121-011-CDB-13381"
-title = "Bench"
+title = "Bench #13381"
 warranty = "3 Years"
 [search_engine_optimization]
 meta_description = ""

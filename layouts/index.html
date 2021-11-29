@@ -1,10 +1,27 @@
 {{ partial "global/head" . }}
-<main>
-{{ partial "home/hero" . }}
-{{ partial "home/intro" . }}
-{{ partial "home/featured" . }}
-{{ partial "home/product" . }}
+<div class="uk-position-relative">
+    <div class="uk-cover-container">
+        <img src="https://res.cloudinary.com/hungryram19/image/upload/v1637596762/navid-ziaolhagh/ambiance-home/modern-gray-interior.jpg" alt="" uk-cover>
+        <canvas height="400"></canvas>
+        <div class="uk-overlay-baseof uk-position-cover"></div>
+        <div class="uk-overlay uk-position-center uk-light uk-text-center">
+            <h1 class="uk-text-uppercase">VIP Portfolio</h1>
+            {{ if .Params.body }}
+            <p>{{ .Params.body }}</p>
+            {{ end }}
+        </div>
+    </div>
+    <div class="uk-position-top">
+        {{ partial "global/navbar" . }}
+    </div>
+</div>
 
+<main>
+<div class="uk-section">
+    <div class="uk-container">
+        
+    </div>
+</div>
 </main>
-{{ partial "home/cta" . }}
+
 {{ partial "global/footer" . }}

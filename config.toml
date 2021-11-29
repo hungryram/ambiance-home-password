@@ -1,6 +1,7 @@
 baseURL = "https://ambiancehome.netlify.app/"
 enableRobotsTXT = "true"
 languageCode = "en-us"
+disableKinds = ["taxonomy", "taxonomyTerm"]
 [[menu.main]]
 name = "Shop"
 weight = 6
